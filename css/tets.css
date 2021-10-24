@@ -1,27 +1,43 @@
-.footer{
-    background-color: #10367C;
-    height:630px;
+* {
+    margin: 0;
+    padding: 0;
+
 }
 
+.footer {
+    background-color: #10367C;
+}
 
-.footer-container{
+.footer-container {
+    max-width: 1440px;
+    padding: 120px 140px;
+    margin: 0 auto;
+}
+
+.wrap {
     display: flex;
     justify-content: space-between;
+
 }
 
-.text{
+.text-1 {
+    color: #ffffff;
     font-size: 20px;
-    line-height: 24px;
-    color: #ffffff;
-    margin: 120px auto 200px 104px;
+    line-height:24px;
+    font-weight: 400;
+
 }
 
-.footer-2020{
+p{
+
+
+}
+
+.footer-2020 {
     color: #ffffff;
+    margin-top: 163px;
     font-size: 14px;
     height: 16px;
     width: 256px;
-   
-
-
 }
+
