@@ -1,0 +1,23 @@
+.footer{
+    background-color: #10367C;
+    height:630px;
+}
+
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.text{
+    font-size: 20px;
+    line-height: 24px;
+    color: #ffffff;
+    margin: 120px auto 200px 104px;
+}
+
+.footer-2020{
+    color: #ffffff;
+    font-size: 14px;
+
+}
