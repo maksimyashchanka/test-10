@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.hider-background{
+    background-color: #000000;
+    opacity: 90%;
+}
+
+header{
+    padding: 60px 105px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 75px;
+}
+
+.nav-vraper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.nav-link{
+    padding: 0 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+ul.nav-link>li{
+    list-style:none;
+    color: #ffffff;
+    padding: 0 12px;
+}
+li>a:hover{
+    border-bottom:4px solid #F5BD41;
+
+}
+
+div.nav-link>img{
+    color: #ffffff;
+    padding: 0 12px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding: 61px 104px 196px;
+
+}
+.Attractions{
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.head-container{
+    width: 1232px;
+    padding: 16px;
+    margin: 8px;
+}
+
+.text-container{
+    width: 542px;
+    font-weight:500;
+    font-size: 50px;
+    line-height:58px;
+    color: #ffffff;
+    padding-bottom: 100px;
+
+}
+
+.form-wrapper{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.mir{
+    width: 460px;
+    height: 65px;
+    border-radius: 8px 0 0 8px;
+
+}
+.mir:focus{
+    border: 3px solid #F5BD41;
+}
+
+.date{
+    height: 65px;
+    width: 259px;
+
+}
+.date:focus{
+    border: 3px solid #F5BD41;
+}
+
+.number{
+    width: 200px;
+    height: 65px;
+
+}
+.number:focus{
+    border: 3px solid #F5BD41;
+
+}
+
+
+
+.search{
+    height: 65px;
+    width: 192px;
+    border-radius: 0 8px 8px 0;
+    background-color:#3077C6 ;
+
+
+}
+
+
+.app-google{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 120px;
+}
+
+
+
+
+
+
