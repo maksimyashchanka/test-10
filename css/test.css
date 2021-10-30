@@ -64,6 +64,9 @@ li{
     width: 430px;
     border-radius:  8px  0 0 8px;
 }
+.mit:hover{
+    border: 1px solid ;
+}
 
 
 .date{
