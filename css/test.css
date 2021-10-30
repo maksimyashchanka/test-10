@@ -1,67 +1,92 @@
-/* cyrillic-ext */
-@font-face {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url(../fons/Roboto-400-cyrillic-ext.woff2) format('woff2');
-    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-
-
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body{
-    font-family: "Roboto" , sans-serif;
+.hider-background{
 
 }
 
-.advantages{
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 0 16px;
-    box-sizing: content-box;
-}
-
-.footer-background{
-    background-color: #10367C;
-    padding: 127px 272px 113px 104px;
-
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 105px;
 
 }
 
-.container{
+.nav-vraper{
     display: flex;
     justify-content: space-between;
 }
 
-.footer-column{
-    line-height:45px;
-    margin-left: -5px;
-
-
+.nav-link{
+    display: flex;
+    justify-content: space-between;
 
 }
 
 ul{
     list-style: none;
+    padding-right: 48px;
+}
+
+li{
+    padding-right: 24px;
+}
+
+.nav-link-icon{
+    padding-left: 24px;
+}
+
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 105px;
+}
+
+.text-container{
+    font-size: 50px;
+    font-weight: 500;
+    padding-bottom: 145px;
+}
+
+
+.app-google{
+    display: flex;
+    justify-content: center;
+    padding: 60px 105px;
+}
+
+.mir{
+    height: 64px;
+    width: 430px;
+    border-radius:  8px  0 0 8px;
+}
+
+
+.date{
+    height: 64px;
+    width:259px;
+}
+
+.number{
+    height: 64px;
+    width:240px;
+}
+.search{
+    height: 64px;
+    width:192px;
+    border-radius: 8px;
+    background-color: #3077C6;
     font-size: 20px;
-    color: #ffffff;
-
 }
 
 
-.footer-2020{
-    padding-top: 64px;
-    color:#FFFFFF;
-    font-size: 14px;
-    font-weight: 400;
 
-}
+
+
 
 
 
