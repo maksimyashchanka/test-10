@@ -1,134 +1,67 @@
-*{
+/* cyrillic-ext */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(../fons/Roboto-400-cyrillic-ext.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-.hider-background{
-    background-color: #000000;
-    opacity: 90%;
-}
-
-header{
-    padding: 60px 105px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 75px;
-}
-
-.nav-vraper{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+body{
+    font-family: "Roboto" , sans-serif;
 
 }
 
-.nav-link{
-    padding: 0 12px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.advantages{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 16px;
+    box-sizing: content-box;
 }
 
-ul.nav-link>li{
-    list-style:none;
-    color: #ffffff;
-    padding: 0 12px;
-}
-li>a:hover{
-    border-bottom:4px solid #F5BD41;
+.footer-background{
+    background-color: #10367C;
+    padding: 127px 272px 113px 104px;
 
-}
 
-div.nav-link>img{
-    color: #ffffff;
-    padding: 0 12px;
 }
 
 .container{
     display: flex;
     justify-content: space-between;
-    padding: 61px 104px 196px;
-
-}
-.Attractions{
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
 }
 
-.head-container{
-    width: 1232px;
-    padding: 16px;
-    margin: 8px;
+.footer-column{
+    line-height:45px;
+    margin-left: -5px;
+
+
+
 }
 
-.text-container{
-    width: 542px;
-    font-weight:500;
-    font-size: 50px;
-    line-height:58px;
+ul{
+    list-style: none;
+    font-size: 20px;
     color: #ffffff;
-    padding-bottom: 100px;
-
-}
-
-.form-wrapper{
-    display: flex;
-    flex-direction: column;
-
-}
-
-.mir{
-    width: 460px;
-    height: 65px;
-    border-radius: 8px 0 0 8px;
-
-}
-.mir:focus{
-    border: 3px solid #F5BD41;
-}
-
-.date{
-    height: 65px;
-    width: 259px;
-
-}
-.date:focus{
-    border: 3px solid #F5BD41;
-}
-
-.number{
-    width: 200px;
-    height: 65px;
-
-}
-.number:focus{
-    border: 3px solid #F5BD41;
 
 }
 
 
-
-.search{
-    height: 65px;
-    width: 192px;
-    border-radius: 0 8px 8px 0;
-    background-color:#3077C6 ;
-
+.footer-2020{
+    padding-top: 64px;
+    color:#FFFFFF;
+    font-size: 14px;
+    font-weight: 400;
 
 }
-
-
-.app-google{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 120px;
-}
-
-
 
 
 
