@@ -3,87 +3,122 @@
     margin: 0;
     box-sizing: border-box;
 }
-
-.hider-background{
-
-}
-
-header{
-    display: flex;
-    justify-content: space-between;
+.hider-background {
+    background: url("/img/photo_2021-10-31_15-48-09.jpg") center no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
     padding: 60px 105px;
-
 }
-
-.nav-vraper{
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-logo {
+    margin: 0;
+}
+.nav-container {
     display: flex;
     justify-content: space-between;
 }
-
-.nav-link{
+.nav-rapper {
     display: flex;
     justify-content: space-between;
-
 }
-
-ul{
+.nav-link-text {
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 400;
+    margin-right: 48px;
+    padding-bottom: 10px;
+}
+ul {
     list-style: none;
-    padding-right: 48px;
+    margin-right: 24px;
 }
-
-li{
-    padding-right: 24px;
+.link-text {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 400;
+    margin-right: 24px;
 }
-
-.nav-link-icon{
-    padding-left: 24px;
+.link-text:hover {
+    border-bottom: 3px solid #F5BD41;
 }
-
-
-.container{
+.nav-link-icon {
     display: flex;
     justify-content: space-between;
-    padding: 60px 105px;
+    align-items: center;
+    padding-right: 105px;
+    height: 40px;
+    width: 40px;
 }
-
-.text-container{
+.link-icon-1 {
+    margin-right: 24px;
+    height: 30px;
+    width: 30px;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 196px 105px;
+}
+.text-container {
+    display: flex;
+    justify-content: space-between;
     font-size: 50px;
     font-weight: 500;
+    padding-top: 192px;
     padding-bottom: 145px;
+    color: #ffffff;
+
 }
+.main-form {
+    margin: 200px 0 120px;
 
-
-.app-google{
-    display: flex;
-    justify-content: center;
-    padding: 60px 105px;
 }
-
-.mir{
+.mir {
     height: 64px;
-    width: 430px;
-    border-radius:  8px  0 0 8px;
+    width: 420px;
+    outline: none;
+    border: none;
 }
-.mit:hover{
-    border: 1px solid ;
+.mir:hover {
+    border: 3px solid #F5BD41;
+
 }
 
-
-.date{
+.date {
     height: 64px;
-    width:259px;
+    width: 259px;
 }
+.date:hover {
+    border: 3px solid #F5BD41;
 
-.number{
-    height: 64px;
-    width:240px;
 }
-.search{
+.number {
     height: 64px;
-    width:192px;
+    width: 240px;
+}
+.number:hover {
+    border: 3px solid #F5BD41;
+}
+.search {
+    height: 64px;
+    width: 192px;
     border-radius: 8px;
     background-color: #3077C6;
     font-size: 20px;
+}
+.app-google {
+    display: flex;
+    justify-content: center;
+    padding-top: 120px;
+}
+.google-play {
+    margin-right: 16px;
 }
 
 
