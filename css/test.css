@@ -55,25 +55,24 @@
 .homes-container-1{
     height: 435px;
     width:296px;
+    padding-bottom: 120px;
 }
 
-.homes-container-2{
-
-}
 
 .homes-label-1{
+    font-family: "Roboto" , sans-serif;
+    font-weight: 400;
     font-size: 24px;
     margin-top: 24px;
     color: #3077C6;
 
 }
 .homes-label-2{
+    font-family: "Roboto" , sans-serif;
+    font-weight: 400;
     font-size: 24px;
     margin-top: 24px;
     margin-bottom: 120px;
     color: #BFBFBF;
-}
-
-.arrow{
 
 }
