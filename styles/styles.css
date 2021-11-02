@@ -1,0 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-sing{
+    min-width:1232px;
+    padding: 16px 105px 0;
+}
