@@ -3,129 +3,51 @@
     margin: 0;
     box-sizing: border-box;
 }
-.hider-background {
-    background: url("/img/photo_2021-10-31_15-48-09.jpg") center no-repeat;
-    background-size: cover;
-    box-sizing: border-box;
-    padding: 60px 105px;
-}
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.header-logo {
-    margin: 0;
-}
-.nav-container {
-    display: flex;
-    justify-content: space-between;
-}
-.nav-rapper {
-    display: flex;
-    justify-content: space-between;
-}
-.nav-link-text {
-    display: flex;
-    justify-content: space-between;
-    color: #ffffff;
-    font-size: 24px;
-    font-weight: 400;
-    margin-right: 48px;
-    padding-bottom: 10px;
-}
-ul {
-    list-style: none;
-    margin-right: 24px;
-}
-.link-text {
-    color: #ffffff;
-    font-size: 24px;
-    font-weight: 400;
-    margin-right: 24px;
-}
-.link-text:hover {
-    border-bottom: 3px solid #F5BD41;
-}
-.nav-link-icon {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-right: 105px;
-    height: 40px;
-    width: 40px;
-}
-.link-icon-1 {
-    margin-right: 24px;
-    height: 30px;
-    width: 30px;
-}
-.container {
-    display: flex;
-    justify-content: space-between;
-    padding: 196px 105px;
-}
-.text-container {
-    display: flex;
-    justify-content: space-between;
-    font-size: 50px;
-    font-weight: 500;
-    padding-top: 192px;
-    padding-bottom: 145px;
-    color: #ffffff;
 
-}
-.main-form {
-    margin: 200px 0 120px;
 
-}
-.mir {
-    height: 64px;
-    width: 420px;
-    outline: none;
+.homes-sec{
+    min-width:1440px;
+    margin: 120px 140px;
+    background-color:#BFBFBF;
     border: none;
 }
-.mir:hover {
-    border: 3px solid #F5BD41;
 
+.homes-header{
+    margin:  120px 540px 105px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 48px;
+    color: #383838;
 }
-
-.date {
-    height: 64px;
-    width: 259px;
-}
-.date:hover {
-    border: 3px solid #F5BD41;
-
-}
-.number {
-    height: 64px;
-    width: 240px;
-}
-.number:hover {
-    border: 3px solid #F5BD41;
-}
-.search {
-    height: 64px;
-    width: 192px;
-    border-radius: 8px;
-    background-color: #3077C6;
-    font-size: 20px;
-}
-.app-google {
+.homes-container{
     display: flex;
-    justify-content: center;
-    padding-top: 120px;
+    justify-content:space-between;
+    margin: 0 55px;
+
+
 }
-.google-play {
-    margin-right: 16px;
+.homes-container-1{
+    height: 435px;
+    width:296px;
 }
 
+.homes-container-2{
 
+}
 
+.homes-label-1{
+    font-size: 24px;
+    margin-top: 24px;
+    color: #3077C6;
 
+}
+.homes-label-2{
+    font-size: 24px;
+    margin-top: 24px;
+    margin-bottom: 120px;
+    color: #BFBFBF;
+}
 
+.arrow{
 
-
-
-
+}
