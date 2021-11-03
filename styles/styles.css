@@ -1,0 +1,65 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.container-the-best{
+    min-width: 1440px;
+    padding: 65px 105px;
+    margin: 0 auto;
+
+
+}
+.title-best{
+   text-align: center;
+    font-size: 40px;
+    font-weight: 50;
+    padding-bottom: 104px;
+}
+
+.input{
+    padding-bottom: 64px;
+}
+
+.button{
+    font-size: 24px;
+    border: 1px solid #ffffff;
+    height:64px ;
+    width:200px ;
+    border-radius: 8px;
+}
+
+.button:hover{
+    background-color: #3077C6;
+
+}
+
+.img-best{
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.img{
+    height: 296px;
+    width: 296px;
+}
+
+.img-photo{
+    padding-bottom: 24px;
+}
+
+.Maldives{
+    font-size: 24px;
+    padding-bottom:50px;
+    color: #3077C6;
+}
+
+
+
+
+
+
