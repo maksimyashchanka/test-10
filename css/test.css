@@ -1,5 +1,3 @@
-
-
 /* cyrillic-ext */
 @font-face {
     font-family: 'Roboto';
@@ -27,17 +25,16 @@
 }
 
 
-.Homes-sec{
-    min-width:1440px;
-    background-color:#EAF0F9;
+.Homes-sec {
+    min-width: 1440px;
+    background-color: #EAF0F9;
     padding: 120px 105px;
-
 
 
 }
 
 .title {
-    font-family: "Roboto" ,sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 500;
     padding-bottom: 120px;
     text-align: center;
@@ -46,30 +43,32 @@
     color: #383838;
 
 }
-.Photo-container{
+
+.Photo-container {
     display: flex;
-    justify-content:space-between;
-
+    justify-content: space-between;
 
 
 }
-.homes-container-1{
+
+.homes-container-1 {
     height: 435px;
-    width:296px;
+    width: 296px;
 
 }
 
 
-.homes-label-1{
-    font-family: "Roboto" , sans-serif;
+.homes-label-1 {
+    font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 24px;
     margin-top: 24px;
     color: #3077C6;
 
 }
-.homes-label-2{
-    font-family: "Roboto" , sans-serif;
+
+.homes-label-2 {
+    font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 24px;
     margin-top: 24px;
