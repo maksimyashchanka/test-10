@@ -5,6 +5,7 @@
 }
 
 .container-sing{
+    display: flex;
     min-width:1232px;
     padding: 16px  0;
     background-color: #EAF0F9;
@@ -13,10 +14,33 @@
 
 .span{
     color: #383838;
+    margin-top:51px;
+    font-size: 24px;
+    font-weight: 500;
 
 }
 
-.user{
+.user-icon{
     padding: 57px  24px;
 }
+
+.column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+
+}
+
+.sign-up{
+    height: 48px;
+    width: 128px;
+    margin-top:21px;
+    font-size:18px ;
+    color: #3077C6;
+    border: 1px solid  #3077C6;
+}
+
+
 
