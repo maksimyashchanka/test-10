@@ -24,7 +24,7 @@
     padding: 57px  24px;
 }
 
-.column{
+.column-title{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -42,5 +42,11 @@
     border: 1px solid  #3077C6;
 }
 
-
+.vector{
+    height: 26px;
+    width: 26px;
+    position: absolute;
+    top:24px ;
+    right:24px ;
+}
 
