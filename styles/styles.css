@@ -5,13 +5,20 @@
 }
 
 
-.container-the-best{
+.container{
     min-width: 1440px;
     padding: 65px 105px;
-    margin: 0 auto;
-
+    max-width: 1440px;
 
 }
+
+.content__wrapper{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    
+}
+
 .title-best{
    text-align: center;
     font-size: 40px;
@@ -36,16 +43,16 @@
 
 }
 
-.img-best{
+.row{
     display: flex;
     justify-content: space-between;
-
-
+    width: 100%;
 }
 
-.img{
+.column{
     height: 296px;
     width: 296px;
+
 }
 
 .img-photo{
