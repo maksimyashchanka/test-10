@@ -25,6 +25,201 @@
 }
 
 
+.header-container {
+    background: url("../img/header-444.png") no-repeat center;
+    background-size: cover;
+    width: 100%;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 51px 105px 208px;
+
+}
+
+.header-logo {
+    margin: 0;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.nav-rapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-link-text {
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 400;
+    margin-right: 48px;
+    padding-bottom: 10px;
+    font-family: "Roboto", sans-serif;
+
+}
+
+ul {
+    list-style: none;
+    margin-right: 24px;
+}
+
+.link-text {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 400;
+    margin-right: 24px;
+
+}
+
+.link-text:hover::after {
+    content: "";
+    display: block;
+    height: 3px;
+    background: #F5BD41;
+
+}
+
+.nav-link-icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 105px;
+    height: 40px;
+    width: 40px;
+}
+
+.link-icon {
+    margin-right: 24px;
+    height: 30px;
+    width: 30px;
+}
+
+.main-container {
+    display: block;
+    padding: 0 105px;
+
+
+}
+
+.title-Discover {
+    font-size: 50px;
+    padding-bottom: 145px;
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+
+}
+
+.main-form{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1232px;
+    width: 100%;
+}
+
+.main-form-block{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1232px;
+    width:100%;
+    border: none;
+}
+
+.form-block{
+    max-width: 1232px;
+    color: #ffffff;
+}
+
+
+.block-input{
+    width: 100%;
+}
+
+
+
+.destination {
+    height: 64px;
+    width: 450px;
+    border-radius: 8px 0 0 8px;
+    border: none;
+    padding-left: 24px;
+    outline: none;
+    outline-offset: 0;
+
+}
+
+.destination:focus {
+    border: 3px solid #F5BD41;
+    border-radius: 8px;
+
+}
+
+.date {
+    height: 64px;
+    width: 240px;
+    text-align: center;
+    border: none;
+    outline: none;
+    outline-offset: 0;
+}
+
+.date:focus {
+    border: 3px solid #F5BD41;
+    border-radius: 8px;
+}
+
+
+.number {
+    height: 64px;
+    width: 300px;
+    text-align: center;
+    border: none;
+    outline: none;
+    outline-offset: 0;
+
+}
+
+.number:focus {
+    border: 3px solid #F5BD41;
+    border-radius: 8px;
+}
+
+.search {
+    height: 64px;
+    width:192px;
+    border-radius: 8px;
+    background-color: #3077C6;
+    border: none;
+    font-size: 24px;
+
+
+
+}
+.app-google {
+    display: flex;
+    justify-content: center;
+    padding-top: 120px;
+    padding-bottom: 108px;
+}
+
+.google-play {
+    margin-right: 16px;
+}
+
+
+
+
+
+
+
 .container{
     padding: 120px 105px;
     max-width: 1440px;
@@ -39,7 +234,7 @@
 }
 
 
-.title {
+.title-offer {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     text-align: center;
@@ -49,6 +244,7 @@
 
 hr {
     margin: 20px auto 80px;
+
     height: 4px;
     width: 100px;
     border: none;
@@ -97,7 +293,7 @@ div.column:not(:last-child){
 
 
 
-.title {
+.title-homes {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     padding-bottom: 120px;
@@ -226,6 +422,7 @@ div.column:not(:last-child){
 }
 
 .span{
+    font-family: "Roboto" , sans-serif;
     color: #383838;
     margin-top:51px;
     font-size: 24px;
@@ -262,7 +459,6 @@ div.column:not(:last-child){
     top:24px ;
     right:24px;
 }
-
 
 
 

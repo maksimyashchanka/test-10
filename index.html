@@ -8,9 +8,62 @@
 </head>
 <body>
 
+<!--Header-->
+<section class="header-container">
+    <header>
+        <div>
+            <img src="img/logo_vector.svg" class="header-logo" alt="Photo">
+        </div>
+        <nav class="nav-container">
+            <ul class="nav-link-text">
+                <li class="link-text"><a>Stays</a></li>
+                <li class="link-text"><a>Attractions </a></li>
+            </ul>
+            <div class="nav-link-icon">
+                <img class="link-icon" src="img/Night.svg" alt="icon1">
+                <img class="link-icon" src="img/AccountCircle.svg" alt="icon2">
+            </div>
+        </nav>
+    </header>
+    <div class="main-container">
+        <h1 class="title-Discover">Discover stays
+            <br>
+            to live, work or just relax</h1>
+        <form class="main-form" action="" method="get">
+            <div class="main-form-block">
+                <div class="form-block">
+                    <div class="block-input">
+                        <input type="text" name="destination" id="destination" class="destination" required>
+                        <label class="block-label" for="destination"></label>
+                    </div>
+                </div>
+                <div class="form-block">
+                    <div class="block-input">
+                        <input type="text" name="date" id="date" class="date" required>
+                        <label class="block-label" for="date"> </label>
+                    </div>
+                </div>
+                <div class="form-block">
+                    <div class="block-input">
+                        <input type="text" name="number" id="number" class="number" required>
+                        <label class="block-label" for="number"></label>
+                    </div>
+                </div>
+                <button class="search" type="submit">Search</button>
+            </div>
+        </form>
+    </div>
+    <div class="app-google">
+        <img class="google-play" src="img/google-play-badge.png" alt="icon">
+        <img class="app-store" src="img/appstore.png" alt="icon">
+    </div>
+</section>
+
+
+<!--Offer-->
 <section class="container">
     <div class="content__wrapper">
-        <h2 class="title">What do we offer</h2>
+        <h2 class="title-offer">What do we offer</h2>
         <hr>
         <div class="row">
             <div class="column">
@@ -34,31 +87,31 @@
 </section>
 
 
-
+<!--Homes-->
 <section class="container-background">
     <div class="content__wrapper">
-        <h2 class="title">Homes guests loves</h2>
+        <h2 class="title-homes">Homes guests loves</h2>
         <div class="row">
             <div class="column">
-                <img class="img-column" src="img/Hostel .png"  alt="Photo"/>
+                <img class="img-column" src="img/Hostel .png" alt="Photo"/>
                 <p class="label-1">Hotel Leopold</p>
                 <p class="label-2">Saint Petersburg, Russia</p>
             </div>
 
             <div class="column">
-                <img class="img-column" src="img/Apartment .png"  alt="Photo"/>
+                <img class="img-column" src="img/Apartment .png" alt="Photo"/>
                 <p class="label-1">Apartment Sunshine</p>
                 <p class="label-2">Santa Cruz de Tenerife,<br> Spain</p>
             </div>
 
             <div class="column">
-                <img class="img-column" src="img/Villa .png"  alt="Photo"/>
+                <img class="img-column" src="img/Villa .png" alt="Photo"/>
                 <p class="label-1">Villa Kunerad</p>
                 <p class="label-2">Vysokie Tatry, Slowakia</p>
             </div>
 
             <div class="column">
-                <img class="img-column" src="img/Hostel .png"  alt="Photo"/>
+                <img class="img-column" src="img/Hostel .png" alt="Photo"/>
                 <p class="label-1">Hostel Friendship</p>
                 <p class="label-2">Berlin, Germany</p>
             </div>
@@ -67,7 +120,7 @@
 </section>
 
 
-
+<!--The best-->
 <section class="container-best">
     <div class="content__wrapper">
         <h2 class="title-best"> The best destinations</h2>
@@ -103,13 +156,13 @@
 </section>
 
 
-
+<!--User-->
 <div class="container-sing">
-    <div  class="user-icon">
-        <img  src="img/user.png" height="86" width="86" alt="icon"/>
+    <div class="user-icon">
+        <img src="img/user.png" height="86" width="86" alt="icon"/>
     </div>
 
-    <div  class="column-title">
+    <div class="column-title">
         <span>Sign up and get 20% off your first booking</span>
         <button class="sign-up" type="submit">Sign up</button>
     </div>
@@ -119,42 +172,44 @@
 </div>
 
 
+<!--Guests-->
 
 
-<div class="footer-background container">
-    <div class="content__wrapper">
-        <div class="row">
-            <div class="footer-column">
-                <ul class="footer-about">
-                    <li>About</li>
-                    <li>How Triphouse works</li>
-                    <li>Careers</li>
-                    <li>Privacy</li>
-                    <li>Terms</li>
-                </ul>
+    <!--Footer-->
+    <div class="footer-background container">
+        <div class="content__wrapper">
+            <div class="row">
+                <div class="footer-column">
+                    <ul class="footer-about">
+                        <li>About</li>
+                        <li>How Triphouse works</li>
+                        <li>Careers</li>
+                        <li>Privacy</li>
+                        <li>Terms</li>
+                    </ul>
+                </div>
+                <div class=" footer-column">
+                    <ul class="footer-about">
+                        <li>Property types</li>
+                        <li>Guest houses</li>
+                        <li>Hotels</li>
+                        <li>Apartments</li>
+                        <li>Villas</li>
+                        <li>Holiday homes</li>
+                        <li>Hostels</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <ul class="footer-about">
+                        <li>Support</li>
+                        <li>Contact Customer Service</li>
+                        <li>FAQ</li>
+                    </ul>
+                </div>
             </div>
-            <div class=" footer-column">
-                <ul class="footer-about">
-                    <li>Property types</li>
-                    <li>Guest houses</li>
-                    <li>Hotels</li>
-                    <li>Apartments</li>
-                    <li>Villas</li>
-                    <li>Holiday homes</li>
-                    <li>Hostels</li>
-                </ul>
-            </div>
-            <div class="footer-column">
-                <ul class="footer-about">
-                    <li>Support</li>
-                    <li>Contact Customer Service</li>
-                    <li>FAQ</li>
-                </ul>
-            </div>
+            <div class="footer-2020"><p>© 2020 Triphouse, Inc. All rights reserved</p></div>
         </div>
-        <div class="footer-2020"><p>© 2020 Triphouse, Inc. All rights reserved</p></div>
     </div>
-</div>
 </body>
 </html>
 
