@@ -6,24 +6,24 @@
 
 
 
-.container {
-    max-width: 1440px;
-    background-color: #EAF0F9;
-    padding: 120px 105px;
+.container-best{
+
 
 }
 
 .content__wrapper{
     display: flex;
-    mix-width: 1230px;
+    max-width: 1230px;
     flex-direction: column;
     margin: 0 auto;
+    padding-bottom: 120px;
 }
 
 .title-best {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
-    padding-bottom: 120px;
+    padding-top: 120px;
+    padding-bottom: 104px;
     text-align: center;
     font-size: 40px;
     line-height: 48px;
@@ -35,16 +35,107 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
+}
+
+.column-best{
+    position: relative;
+}
+.column-best  span{
+    background-color: #C4C4C4;
+    height:48px;
+    width:400px;
+    position: absolute;
+    left:0;
+    top:354px;
+
+}
+
+
+
+
+span{
+    text-align: left;
+    color: #ffffff;
+    padding-left: 24px;
+    padding-top: 16px;
+
+
+
 
 
 }
 
+
+.Ubud{
+    text-align: left;
+    padding-left: 24px;
+    padding-top: 24px;
+}
+.indonesia{
+    text-align: left;
+    padding-left: 24px;
+    padding-top: 16px;
+}
+
+.block-number{
+    position: absolute;
+    right: 11px;
+    bottom: 340px;
+    padding-left: 11px;
+}
+
+.number{
+    height:32px ;
+    width:48px;
+    background-color:#10367C;
+    color: #BFBFBF;
+    font-size: 18px;
+    border-radius: 8px;
+    padding-top: 4px;
+}
+
+
+
+.reviews{
+    padding-top: 8px;
+    opacity: 0.3;
+}
+
+.user-flag{
+    display: flex;
+    padding-left: 34px;
+    padding-top: 24px;
+}
+
+
+
+
+
+
+.title-best-bottom{
+    text-align: left;
+    padding: 17px 11px 64px 24px;
+}
+
+
 .column-best {
     text-align: center;
-    width:33%;
+    flex:0 1  33.3333%;
+    background-color: #EAF0F9;
+    position: relative;
+
 
 }
 
 div.column-best:not(:last-child){
     margin-right:16px ;
+}
+
+
+.strum{
+    position: absolute;
+    top: 180px;
+    right: -20px;
+    height: 40px;
+    width: 40px;
 }
