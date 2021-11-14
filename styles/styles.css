@@ -221,16 +221,18 @@ ul {
 
 
 .container{
-    padding: 120px 105px;
     max-width: 1440px;
+    padding: 120px 104px;
+
+
 
 }
 
 .content__wrapper{
     display: flex;
-    max-width: 1230px;
+    max-width: 1232px;
     flex-direction: column;
-    margin: 0 auto;
+
 }
 
 
@@ -242,19 +244,24 @@ ul {
     font-style: normal;
 }
 
-hr {
-    margin: 20px auto 80px;
-
-    height: 4px;
+.title-line::after{
+    content: "";
+    display: block;
     width: 100px;
+    height: 4px;
     border: none;
+    margin: 20px auto 80px;
     background-color: #F5BD41;
+
 }
+
+
 
 .row{
     display: flex;
     justify-content: space-between;
     width: 100%;
+    max-width: 1232px;
 }
 
 .column{
@@ -287,7 +294,7 @@ div.column:not(:last-child){
 .container-background {
     max-width: 1440px;
     background-color: #EAF0F9;
-    padding: 120px 105px;
+    padding: 120px 104px;
 
 }
 
@@ -309,14 +316,15 @@ div.column:not(:last-child){
 .column {
     text-align: center;
     width:25%;
+    position: relative;
 
 }
 
 
 
 .img-column{
-    height: 280px;
-    width: 280px;
+    height: 265px;
+    width: 265px;
 }
 
 
@@ -340,15 +348,23 @@ div.column:not(:last-child){
 
 }
 
+.strum-homes{
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    right: -20px;
+    bottom: 250px;
+}
+
 
 
 
 
 
 .container-best{
-    padding: 65px 105px;
     max-width:1440px;
     position: relative;
+    padding: 65px 105px;
 
 }
 
@@ -357,7 +373,7 @@ div.column:not(:last-child){
     text-align: center;
     font-size: 40px;
     font-weight: 50;
-    padding-bottom: 104px;
+    padding-bottom: 105px;
 }
 
 .block-button{
@@ -393,8 +409,8 @@ div.column:not(:last-child){
 
 
 .img-photo{
-    height: 280px;
-    width: 280px;
+    height: 265px;
+    width: 265px;
     padding-bottom: 24px;
 }
 
@@ -413,15 +429,24 @@ div.column:not(:last-child){
 }
 
 
+
+.container-user{
+    max-width: 1440px;
+    width: 100%;
+}
+
 .container-sing{
     display: flex;
     padding: 16px  0;
     background-color: #EAF0F9;
     position: relative;
-
+    margin-left: 105px;
+    margin-right: 105px;
 }
 
 .span{
+    max-width: 1232px;
+    width: 100%;
     font-family: "Roboto" , sans-serif;
     color: #383838;
     margin-top:51px;
@@ -429,18 +454,14 @@ div.column:not(:last-child){
     font-weight: 500;
 
 }
-
 .user-icon{
     padding: 57px  24px;
 }
-
 .column-title{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-
-
 }
 
 .sign-up{
@@ -459,7 +480,6 @@ div.column:not(:last-child){
     top:24px ;
     right:24px;
 }
-
 
 
 
