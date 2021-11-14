@@ -4,11 +4,7 @@
     box-sizing: border-box;
 }
 
-
-
 .container-best{
-
-
 }
 
 .content__wrapper{
@@ -50,21 +46,12 @@
 
 }
 
-
-
-
 span{
     text-align: left;
     color: #ffffff;
     padding-left: 24px;
     padding-top: 16px;
-
-
-
-
-
 }
-
 
 .Ubud{
     text-align: left;
@@ -95,8 +82,6 @@ span{
 
 }
 
-
-
 .reviews{
     padding-top: 8px;
     opacity: 0.3;
@@ -108,30 +93,21 @@ span{
     padding-top: 24px;
 }
 
-
-
-
-
-
 .title-best-bottom{
     text-align: left;
     padding: 17px 11px 64px 24px;
 }
-
 
 .column-best {
     text-align: center;
     flex:0 1  33.3333%;
     background-color: #EAF0F9;
     position: relative;
-
-
 }
 
 div.column-best:not(:last-child){
     margin-right:16px ;
 }
-
 
 .strum{
     position: absolute;
@@ -140,3 +116,5 @@ div.column-best:not(:last-child){
     height: 40px;
     width: 40px;
 }
+
+
