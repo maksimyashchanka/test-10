@@ -108,12 +108,25 @@ const people = [
 
 
 
- const infoName = people
-     .filter(persone => persone.budget > 5000)
-     .map(persone => {
-         return{
-             info: `${persone.name} (${persone.age})`,
-             budget: persone. budget
-         }
-     })
- console.log(infoName)
+ // const infoName = people
+ //     .filter(persone => persone.budget > 5000)
+ //     .map(persone => {
+ //         return{
+ //             info: `${persone.name} (${persone.age})`,
+ //             budget: persone.budget
+ //         }
+ //     })
+ // console.log(infoName)
+
+
+// const infoZir = people
+//     .filter(persone => persone.budget > 5000)
+//     .map(persone => {
+//         return{
+//             info: `${persone.name} (${persone.age})`,
+//             budget: persone.budget
+//         }
+//     })
+//     .reduce((total, persone) => total + persone.budget, 0 )
+//     console.log(infoZir);
+
