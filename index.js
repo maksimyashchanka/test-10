@@ -119,14 +119,47 @@ const people = [
  // console.log(infoName)
 
 
-// const infoZir = people
-//     .filter(persone => persone.budget > 5000)
-//     .map(persone => {
-//         return{
-//             info: `${persone.name} (${persone.age})`,
-//             budget: persone.budget
-//         }
-//     })
-//     .reduce((total, persone) => total + persone.budget, 0 )
-//     console.log(infoZir);
+ // const infoZir = people
+ //     .filter(persone => persone.budget > 5000)
+ //     .map(persone => {
+ //         return{
+ //             info: `${persone.name} (${persone.age})`,
+ //             budget: persone.budget
+ //         }
+ //     })
+     //.reduce((total, persone) => total + persone.budget, 0 )
+     // console.log(infoZir);
 
+//Диструктуризация Массив
+function calcValue (a, b) {
+    return[
+        a + b,
+        undefined,
+        a * b,
+        a / b
+
+    ]
+}
+// const [sum, sub = "Нет вычисления", priv, ...pi] = calcValue(40 , 10);
+// console.log(sum, priv, pi, sub);
+
+
+//Диструктуризация Обьект
+const person = {
+    name: "Max",
+    age: 20,
+    address: {
+        country: "Lolcin",
+        city: "Minsk"
+    }
+}
+// const {name, age, car = "Авто нет в наличии", address} = person;
+// console.log(name, age, car,  address);
+
+// const {name, ...info} = person;
+// console.log(name, info);
+
+function newPerson({name, age}){
+    console.log(name + " " + age)
+}
+newPerson(person)
