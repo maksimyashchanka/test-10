@@ -153,13 +153,36 @@ const person = {
         city: "Minsk"
     }
 }
-// const {name, age, car = "Авто нет в наличии", address} = person;
-// console.log(name, age, car,  address);
+  // const {name, age, car = "Авто нет в наличии", address} = person;
+  // console.log(name, age, car,  address);
 
-// const {name, ...info} = person;
-// console.log(name, info);
+ // const {name, ...info} = person;
+ //  console.log(name, info);
 
-function newPerson({name, age}){
-    console.log(name + " " + age)
+ // function newPerson({name, age}) {
+ //     console.log (name + " " + age)
+ // }
+
+
+
+function test(){
+    const n = 15;
+    const m = 25;
+    console.log(n + m)
 }
-newPerson(person)
+test();
+
+
+function indexTime(){
+    let time = Math.floor(new Date().getTime())
+    console.log(time)
+}
+indexTime();
+
+function rondomindex(){
+    const min = 0;
+    const max = 100;
+    let result = Math.floor(min + Math.random() * (max +1 - min))
+    console.log(result)
+}
+rondomindex();
