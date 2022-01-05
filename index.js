@@ -182,7 +182,80 @@ indexTime();
 function rondomindex(){
     const min = 0;
     const max = 100;
-    let result = Math.floor(min + Math.random() * (max +1 - min))
+    let result = Math.floor(min + Math.random() * (max + 1 - min))
     console.log(result)
 }
 rondomindex();
+
+//Аргументы
+function sum3(x1, y1){
+    console.log(x1 + y1);
+}
+sum3(44, 11);
+let z = 77;
+sum3(z, 10);
+sum3(z, z * 2);
+
+//Однин вариант записи
+function show(elem, x, y){
+    document.querySelector(elem).textContent = x + y;
+}
+show('.out-2', 5,6);
+
+//Второй вариант записи
+function show2(elem, x, y) {
+    elem.textContent = x + y;
+}
+const out1 = document.querySelector('.out-1');
+show2(out1, 70, 30);
+
+
+//Третий вариант записи
+function show3(x, y, elem= '.out-1'){
+    document.querySelector(elem).textContent = x + y;
+}
+show3(10,15, );
+
+
+//Четвёртый вид записи
+function show4(elem= '.out-1', x, y){
+    console.log(arguments);
+    document.querySelector(elem).textContent = x + y;
+}
+show4('.out-2', 10,20);
+
+
+function red() {
+    console.log(arguments);
+    let about = 0;
+    for(let i = 0; i < arguments.length; i++){
+        about += arguments[i];
+    }
+    console.log(about);
+}
+red(4, 6, 10);
+
+
+function red2(...args) {
+    console.log(args);
+    let about2 = args.reduce((accum, item) => accum += item);
+    console.log(about2);
+}
+red2(4, 6, 10, 20, 30, 4, 5);
+
+
+//Функция как аргумент
+function bli(res){
+    document.querySelector('.out-1').innerHTML = `<b>${res}</b>`;
+
+}
+
+function me (drawFunction,...num){
+    drawFunction(num)
+}
+me( bli, 450, 500, 600, 100);
+
+
+
+
+
