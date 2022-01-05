@@ -164,7 +164,7 @@ const person = {
  // }
 
 
-
+//Функция
 function test(){
     const n = 15;
     const m = 25;
@@ -245,17 +245,135 @@ red2(4, 6, 10, 20, 30, 4, 5);
 
 
 //Функция как аргумент
-function bli(res){
-    document.querySelector('.out-1').innerHTML = `<b>${res}</b>`;
+function blic(resul){
+    document.querySelector('.out-1').innerHTML = `<mark>${resul}</mark>`;
 
 }
 
-function me (drawFunction,...num){
+function me ( num, drawFunction){
     drawFunction(num)
 }
-me( bli, 450, 500, 600, 100);
+me(  450, blic );
+
+
+
+
+function bli(res){
+    document.querySelector('.out-2').innerHTML = `<b>${res}</b>`;
+
+}
+function mi (drawFunction,...num){
+    drawFunction(num)
+}
+mi( bli, 450, 500, 600, 100);
+
+
+//Return
+function f1(x, y){
+    return x + y;
+}
+
+function f2(){
+    console.log(2);
+    return 15;
+}
+f2();
+console.log(1 + f2());
+console.log(f1(3,3) + f1(3, 3));
+console.log(2 + 3 + 4 + 5 + f1(1 , 1));
+
+function last (min, max){
+    let rand = min + Math.random() * (max + 1 - min);
+    return Math.floor(rand)
+}
+let r = last(1, 5);
+console.log(r);
+console.log(last(6, 10) + 100);
+
+//Способы вывода функции.
+console.log(f1(100, 201));
+document.querySelector(`.out-1`).textContent = (f1(400, 300)); //Браузер
+document.querySelector(`.out-1`).style .background = `rgb(25, 123, 19)`; //Браузер
+document.querySelector(`.out-2`).style .background = `rgb(120, 10, 11)`; //Браузер
+document.querySelector(`.out-2`).style .background =
+    `rgb(${last (0, 255)}, ${last (0, 255)}, ${last (0, 255)})`; //Браузер
+//lert(f1(4,4));
+
+//Использовать в выражениях
+console.log(100 * f1(3, 4));
 
 
 
 
 
+//Вывод данных введенных пользователем css html js(общий файл)
+document.querySelector(`.b-3`).addEventListener(`click`,
+    function  (){
+    const s = document.querySelector(`.i-3`).value;
+        document.querySelector(`.out-3`).innerHTML = 'Привет ' + clearText(s);
+        console.log('Привет ' + clearText(s));
+    });
+
+function clearText(data){
+    return data.trim().toUpperCase();
+}
+
+
+document.querySelector(`.b-3`).addEventListener(`click`, //Кнопка
+    function  (){
+        document.querySelector(`.b-3`).style .background = `rgb(120, 10,10)`;
+    })
+
+
+
+function f4(){
+    console.log(1)
+    return;
+    console.log(2)
+    console.log(3)
+}
+f4()
+
+//Прерывание функции
+//indexOf
+function indexOfMuil(arr, num){
+    for(let i = 0; i < arr.length; i++){
+        if(arr[i] === num) return i;
+    }
+    return -1;
+}
+let resu = indexOfMuil([120, 23,122,1, 2, 12,22, 33, 44, 55], 55);
+console.log(resu);
+
+
+
+//Пользователь вводит количество лет
+document.querySelector(`.b-4`).addEventListener(`click`, //Кнопка
+    function  (){
+    let year = document.querySelector(`.i-4`).value;
+    if(isNaN(year)) return;
+    if(year <= 0 || year > 140) return;;
+    document.querySelector(`.out-4`).innerHTML =  2022 - year;
+    });
+
+
+// ex 5 Сумма 33
+console.group('example 5');
+const arr5 = [[3,4,5] , [6,7,8]];
+function t5(){
+    let s = 0;
+    for (let i = 0; i < arr5.length; i++){
+        s += sum(arr5[i])
+    }
+    console.log(s);
+}
+
+function sum(arr){
+    let sum = 0;
+    for(let i = 0; i < arr.length; i++){
+        sum += arr[i];
+    }
+    return sum;
+}
+t5();
+console.groupEnd();
