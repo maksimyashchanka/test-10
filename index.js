@@ -377,3 +377,77 @@ function sum(arr){
 }
 t5();
 console.groupEnd();
+
+
+// ex 6 Return
+console.group('example 6');
+function t6(){
+    let a = 88;
+    //return
+    //a;  //Ошибка
+
+    return a;  //Правильно
+
+    //return (
+        //a   //Првильно
+    //);
+}
+
+console.log(t6());
+console.groupEnd();
+
+
+// ex 7 Return
+console.group('example 7')
+const arr7 = [[3, 4, 5], [6, 7, 9], [7, 7, 1],[2, 2]];
+const evenArr = arr7.filter(function (item){
+    return (sum(item) % 2 === 0);
+});
+console.log(evenArr)
+console.groupEnd();
+
+
+// ex 8 Return функции
+
+function t8(){
+    return sum;
+}
+let s = t8();
+console.log(s ([10, 10, 10]));
+
+
+//Стрелочная Функция
+function plus(a, b){
+    return a + b;
+}
+
+function multi(a , b){
+    return a * b;
+}
+
+document.querySelector(`.b-5`).addEventListener('click', function (){
+    let blue = plus(23, 45);
+    console.log(blue);
+});
+
+document.querySelector(`.b-6`).addEventListener('click', () => { //Стрелочная функция
+    let blue = plus(1, 9);
+    console.log(blue);
+});
+
+//Запуск двух функций
+document.querySelector(`.b-7`).addEventListener('click',  () => {
+    let blue = plus(1, 91);
+    console.log(blue);
+    let blue2 = multi(2, 16);
+    console.log(blue2);
+});
+
+
+//Callback
+const ar1 = [4, 5, 6, 7, 8];
+    function bil(a){
+        return a**2;
+    }
+    const rest2 = ar1.map(bil);
+console.log(rest2);
