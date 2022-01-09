@@ -455,16 +455,37 @@ console.log(rest2);
 
 
 
-     function isPalindrome(v) {
-        return  v === v.split().reverse(" ").join(" ");
-     }
-     console.log(isPalindrome('madam'));
+     // function isPalindrome(v) {
+     //    return  v === v.split().reverse(" ").join(" ");
+     // }
+     // console.log(isPalindrome('madam'));
 
 
-     const arr3 = [1, 3, 9, 17];
-     const arr4 = arr3.filter(function (item, index){
-         if (index % 3 === 0){
+        const arr4 = ar1.filter(function (item, index){
+          if (index % 2 === 0){
              return true
          }
-     })
-     console.log(arr4);
+      })
+      console.log(arr4);
+
+        const ar5 = [112, 23456, 37685, 445432, 545667, 66666666, 765545, 8888888888, 9864];
+        const ar6 = ar5.filter( (atem, index) => {
+            if(atem % 2 === 0){
+                return true
+            }
+        })
+        console.log(ar6);
+
+
+        //Arrow аргументы
+        const v2 = (...arg) => {
+            console.log(arg);
+            console.log('Word');
+        }
+        v2(99, 100, 122, 123, 434);
+
+
+
+
+
+
