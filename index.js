@@ -451,3 +451,20 @@ const ar1 = [4, 5, 6, 7, 8];
     }
     const rest2 = ar1.map(bil);
 console.log(rest2);
+
+
+
+
+     function isPalindrome(v) {
+        return  v === v.split().reverse(" ").join(" ");
+     }
+     console.log(isPalindrome('madam'));
+
+
+     const arr3 = [1, 3, 9, 17];
+     const arr4 = arr3.filter(function (item, index){
+         if (index % 3 === 0){
+             return true
+         }
+     })
+     console.log(arr4);
