@@ -1,10 +1,10 @@
-const people = [
-    {name: 'Maksim', age: 27, budget: 5000},
-    {name: 'Vika', age: 16, budget: 4900},
-    {name: 'Dima', age: 26, budget: 9000},
-    {name: 'Stas', age: 23, budget: 1000},
-    {name: 'Danila', age: 10, budget: 3500}
-]
+// const people = [
+    // {name: 'Maksim', age: 27, budget: 5000},
+    // {name: 'Vika', age: 16, budget: 4900},
+    // {name: 'Dima', age: 26, budget: 9000},
+    // {name: 'Stas', age: 23, budget: 1000},
+    // {name: 'Danila', age: 10, budget: 3500}
+// ]
 
 //for(let i = 0; 0 < people.length; i++){
 //console.log(mas[i]);
@@ -453,20 +453,18 @@ const ar1 = [4, 5, 6, 7, 8];
 console.log(rest2);
 
 
-
-
-     // function isPalindrome(v) {
+        // function isPalindrome(v) {
      //    return  v === v.split().reverse(" ").join(" ");
      // }
      // console.log(isPalindrome('madam'));
 
-
-        const arr4 = ar1.filter(function (item, index){
-          if (index % 2 === 0){
+        const arru = [1, 3, 4, 5, 6, 7, 9,];
+        const arre = arru.filter(function (item, index){
+          if(item % 2 === 0){
              return true
          }
       })
-      console.log(arr4);
+      console.log(arre);
 
         const ar5 = [112, 23456, 37685, 445432, 545667, 66666666, 765545, 8888888888, 9864];
         const ar6 = ar5.filter( (atem, index) => {
@@ -486,6 +484,128 @@ console.log(rest2);
 
 
 
+const user22 = {
+    name: 'Maks',
+    age: 27,
+    salary: 10000,
+    profession: 'Blog'
+};
+console.log(user22);
 
+let keys = Object.keys(user22);
+console.log(keys);
+
+let value = Object.values(user22);
+console.log(value);
+
+let entries = Object.entries(user22);
+console.log(entries);
+
+
+const today = new Date();
+console.log(today);
+
+
+// 9 Советов
+//#1
+function cros(name, age){
+    console.log('Ваше имя: ' + name);
+    console.log('Ваш возваст: ' + age);
+}
+cros('Maks', 27);
+
+//Лутший вариант
+function cros2(argus){
+    console.log('Ваше имя: ' +argus.name);
+    console.log('Ваш возваст: ' + argus.age);
+}
+cros2({
+    name: 'Maks',
+    age: 27
+})
+
+// #2 генератор
+function* idGenerator(){
+    let id = 177;
+    while (true){
+        yield id++
+    }
+}
+const myIdGenerator = idGenerator();
+console.log(myIdGenerator.next().value);
+console.log(myIdGenerator.next().value);
+console.log(myIdGenerator.next().value);
+console.log(myIdGenerator.next().value);
+console.log(myIdGenerator.next().value);
+console.log(myIdGenerator.next().value);
+
+
+// #3
+const andr = {
+    name: 'Maks',
+    age: 27,
+    date: ['hi' , 'Hello']
+}
+console.log(JSON.stringify(andr));
+console.log(JSON.stringify(andr, null, 2));
+
+// #4
+const subDate = {
+    red: ['statiton 1', 'statiton 2', 'statiton 3'],
+    green: ['statiton 4', 'statiton 5', 'statiton 6'],
+}
+console.log(subDate.green.join(' '));
+console.log(subDate.blue?.join(' '));
+
+// #5
+
+const cros3 = {
+    name: 'Maks',
+    age: 27,
+    date: ['12345h678', '123344mnm', '656472']
+}
+const {name, age} = cros3;
+console.log(name, age);
+const {0: psport, 1: naber, 2: kod} = cros3.date;
+console.log(psport, naber, kod)
+
+// #6
+let of = [44, 45];
+console.log([...of, 33, 66]);
+
+// #7
+ const muArr = [1, 2, 1, 3, 5, 2, 6, 7, 4, 3, 7, 9, 1, 5, 9, 10, 3, 2, 5, 4]
+console.log(new Set(muArr));
+console.log([...new Set(muArr)]);
+
+// #8
+const arr9 = [['2'], 23, '54', 345, '900'];
+const arr8Nuo = arr9.map(Number);
+console.log(arr8Nuo);
+
+// #9
+console.time( 'ex 1');
+let p = 77;
+let q = 99;
+[p, q] = [q, p];
+console.timeEnd( 'ex 1');
+
+console.time( 'ex 2');
+let i = 77;
+let v = 99;
+for(let i = 0; i < 1000000; i++){
+    [i, v] = [v, i];
+}
+console.timeEnd( 'ex 2');
+
+console.time( 'ex 3');
+let h = 77;
+let f = 99;
+for(let i = 0; i < 1000000; i++){
+    let e = h;
+    h = f;
+    f = h;
+}
+console.timeEnd( 'ex 3');
 
 
