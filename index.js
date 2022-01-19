@@ -584,6 +584,7 @@ const arr8Nuo = arr9.map(Number);
 console.log(arr8Nuo);
 
 // #9
+
 console.time( 'ex 1');
 let p = 77;
 let q = 99;
@@ -609,3 +610,89 @@ for(let i = 0; i < 1000000; i++){
 console.timeEnd( 'ex 3');
 
 
+//Функция стрелочная
+function z1(){
+    console.log(1);
+    console.log(2);
+    console.log(3);
+}
+z1();
+console.log('Пробел');
+
+const t2 = () => {
+    console.log(1);
+    console.log(2);
+    console.log(3);
+}
+t2();
+
+
+let count = 0;
+const incriment = () => {
+    debugger;
+    count ++;
+    console.log(count);
+};
+
+const timeFunction = () =>{
+    setTimeout(incriment, 1000)
+}
+
+document.querySelector('#res').addEventListener('click',   timeFunction);
+
+
+const a = [1, 2, 3];
+let b = a.map(item => item*3);
+console.log(b);
+
+function resultNamber (n){
+    if(n >= 0) return n;
+        else return  0;
+}
+console.log(resultNamber(4));
+console.log(resultNamber(-4));
+
+
+const resultNamberTu = n => (n >= 0 ? n : 0);
+console.log(resultNamberTu(10));
+console.log(resultNamberTu(-1));
+
+
+const arrNaber = [1, 2, 3];
+let arrNamberTu = arrNaber.map(item => ({'num': item}));
+console.log(arrNamberTu);
+
+// document.querySelector('#rest').addEventListener('click', () =>{
+//     fetch('file.json') //Fetch API предоставляет интерфейс JavaScript для работы с запросами и ответами HTTP.
+//         .then(resto => resto.json()) //Метод then() возвращает Promise. Метод может принимать два аргумента: колбэк-функции для случаев выполнения и отклонения промиса.
+//         .then(file =>{
+//             file.forEach(item =>{
+//                 console.log(item.name);
+//             })
+//         });
+// });
+
+
+//Лучший Вариант
+const readJson = file =>{
+        file.forEach(item =>{
+        console.log(item.name);
+        })
+}
+
+const clickHandle = () =>{
+    fetch('file.json')
+        .then(resto => resto.json())
+        .then(readJson);
+}
+
+document.querySelector('#rest').addEventListener('click', clickHandle);
+
+//Reduce
+let arrA = [22, 33, 44, 55, 66, 77, 88, 99];
+let arrB = arrA.reduce((accum, item) => {
+    accum = accum + ' ' +item;
+    return accum;
+});
+console.log('===============');
+console.log(arrB);
