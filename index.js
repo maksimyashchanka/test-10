@@ -696,3 +696,16 @@ let arrB = arrA.reduce((accum, item) => {
 });
 console.log('===============');
 console.log(arrB);
+
+
+
+
+//DOM
+const  bodyElements = document.body;
+const childNodes = bodyElements.childNodes;
+for(let node of childNodes){
+    console.log(node);
+}
+
+
+
