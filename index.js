@@ -698,14 +698,87 @@ console.log('===============');
 console.log(arrB);
 
 
+//Замыкание
+ let nam = "Maks";
+ function  sayHi() {
+     console.log("Hi," + nam);
+ }
+ nam = "Denis";
+ sayHi(); //Denis
+
+ function makeWorker() {
+     let name = "Pete";
+     return function (){
+         console.log(name);
+     };
+ }
+ let name1 = "John";
+ let work = makeWorker();
+ work(); //Pete
+
+
+function sayHiBye(firstName, lastName){
+    function getFullName(){
+        return  firstName + " " + lastName;
+    }
+
+    console.log ("Hello, " + getFullName() );
+    console.log ("Bye, " + getFullName() );
+}
+sayHiBye();
+
+
 
 
 //DOM
-const  bodyElements = document.body;
-const childNodes = bodyElements.childNodes;
-for(let node of childNodes){
-    console.log(node);
+// const  bodyElements = document.body; //все деревo HTML
+// const childNodes = bodyElements.childNodes;
+// for(let node of childNodes){
+//     console.log(node);
+// }
+
+
+const one = document.querySelector('.one')
+one.style.width = '150px';
+one.style.paddingBottom = '75px';
+//console.log(one.style);
+one.classList.add('two', 'three');
+//one.classList.remove('three')
+
+
+const toggle = document.querySelector('.toggle');
+toggle.onclick = function (){
+    this.classList.toggle('three')
+}
+//Атрибуты DOM
+console.log(one.getAttribute('data')); //Атрибут Привет
+console.log(document.querySelectorAll('link')[1].getAttribute('href')); //Покажет мой CSS
+one.setAttribute('data-num', 6);
+
+let gas = document.querySelectorAll('.gas');
+for(let i = 0; i < gas.length; i++){
+    gas[i].onclick = function (){
+    let gallons = document.querySelector('.gallons').value;
+    let amount = this.getAttribute('data');
+        console.log(gallons * amount);
+    }
 }
 
+let venam = document.createElement('div');
+venam.innerHTML = 'Hello';
+venam.classList.add('oneo');
+document.querySelector('.test1').appendChild(venam);
+venam.onclick = function (){
+    alert('Hello');
+}
+
+console.log(venam);
 
 
+//Event
+// let currentEvent = null;
+// const  getEventType = (event) => {
+//     currentEvent = event.type
+//     console.log(currentEvent)
+//     document.getElementById('eventType').innerHTML = currentEvent
+// }

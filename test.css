@@ -6,3 +6,16 @@ div.section{
     border-bottom: 1px solid black;
     border-right:1px solid black ;
 }
+
+.one{
+    background-color: red;
+}
+
+.two{
+    background-color: blue;
+}
+
+.three{
+    background-color:  orange;
+    border: 2px solid orange;
+}
