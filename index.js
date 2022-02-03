@@ -1,75 +1,75 @@
-// const people = [
-    // {name: 'Maksim', age: 27, budget: 5000},
-    // {name: 'Vika', age: 16, budget: 4900},
-    // {name: 'Dima', age: 26, budget: 9000},
-    // {name: 'Stas', age: 23, budget: 1000},
-    // {name: 'Danila', age: 10, budget: 3500}
-// ]
+ const people = [
+    {name: 'Maksim', age: 27, budget: 5000},
+    {name: 'Vika', age: 16, budget: 4900},
+    {name: 'Dima', age: 26, budget: 9000},
+    {name: 'Stas', age: 23, budget: 1000},
+    {name: 'Danila', age: 10, budget: 3500}
+]
 
-//for(let i = 0; 0 < people.length; i++){
-//console.log(mas[i]);
-//}
-
-
-//for (let person of people ){
-// console.log(person)
-//}
+for(let i = 0; 0 < people.length; i++){
+console.log(people);
+}
 
 
-
-//forEach
-//people.forEach(function (person){
-//    console.log(person);
-//})
-
-//people.forEach(person => console.log(person))
+for (let person of people ){
+console.log(person)
+}
 
 
-//map
-//const newPeo = people.map(person => {
-// return person.name
-//})
-//console.log(newPeo)
+
+forEach
+people.forEach(function (person){
+   console.log(person);
+})
+
+people.forEach(person => console.log(person))
 
 
-//const newPeople = people.map(person => `${person.name} (${person.age})`)
-//console.log(newPeople)
-
-//const newPeopl = people.map(person => person.age * 3)
-//console.log(newPeopl)
-
-//Filter
-//const Kat = []
-//for (let i = 0; i < people.length; i++){
-// if (people[i].age >= 18){
-//  Kat.push(people[i])
-//}
-//}
-//console.log(Kat)
+map
+const newPeo = people.map(person => {
+return person.name
+})
+console.log(newPeo)
 
 
-//const puk = people.filter(person => {
-//if(person.age >= 18){
-//   return true
-//}
-//})
-//console.log(puk)
+const newPeople = people.map(person => `${person.name} (${person.age})`)
+console.log(newPeople)
 
-//const adler = people.filter(person => person.age >= 27)
-//console.log(adler)
+const newPeopl = people.map(person => person.age * 3)
+console.log(newPeopl)
 
-//Reduce
-    //let big = 0;
-    //for(let i = 0; 0 < people.length; i++){
-      //  big += people[i]. budget
-   // }
-    //console.log(big);
+// //Filter
+const Kat = []
+for (let i = 0; i < people.length; i++){
+if (people[i].age >= 18){
+ Kat.push(people[i])
+}
+}
+console.log(Kat)
 
 
-//const lis = people.reduce((total, persone) => {
-    //return total + persone.budget
-//},0)
-//console.log(lis);
+const puk = people.filter(person => {
+if(person.age >= 18){
+  return true
+}
+})
+console.log(puk)
+
+const adler = people.filter(person => person.age >= 27)
+console.log(adler)
+
+Reduce
+    let big = 0;
+    for(let i = 0; 0 < people.length; i++){
+       big += people[i]. budget
+   }
+    console.log(big);
+
+
+const lis = people.reduce((total, persone) => {
+    return total + persone.budget
+},0)
+console.log(lis);
 
 
 
@@ -730,12 +730,12 @@ sayHiBye();
 
 
 
-//DOM
-// const  bodyElements = document.body; //все деревo HTML
-// const childNodes = bodyElements.childNodes;
-// for(let node of childNodes){
-//     console.log(node);
-// }
+DOM
+const  bodyElements = document.body; //все деревo HTML
+const childNodes = bodyElements.childNodes;
+for(let node of childNodes){
+    console.log(node);
+}
 
 
 const one = document.querySelector('.one')
@@ -775,10 +775,72 @@ venam.onclick = function (){
 console.log(venam);
 
 
-//Event
-// let currentEvent = null;
-// const  getEventType = (event) => {
-//     currentEvent = event.type
-//     console.log(currentEvent)
-//     document.getElementById('eventType').innerHTML = currentEvent
-// }
+Event
+let currentEvent = null;
+const  getEventType = (event) => {
+    currentEvent = event.type
+    console.log(currentEvent)
+    document.getElementById('eventType').innerHTML = currentEvent
+}
+
+
+
+const uri = 'https://mozilla.org/?x=шеллы';
+const encoded = encodeURI(uri);
+console.log(encoded);
+// expected output: "https://mozilla.org/?x=%D1%88%D0%B5%D0%BB%D0%BB%D1%8B"
+try {
+    console.log(decodeURI(encoded));
+    // expected output: "https://mozilla.org/?x=шеллы"
+} catch (e) { // catches a malformed URI
+    console.error(e);
+}
+
+
+
+//Histiry
+window.addEventListener('popstate', (event) => {
+    console.log(`location: ${document.location}, state: ${JSON.stringify(event.state)}`);
+});
+// history.pushState({page: 1}, "title 1", "?page=1");
+// history.pushState({page: 2}, "title 2", "?page=2");
+// history.replaceState({page: 3}, "title 3", "?page=3");
+history.back();
+history.back();
+// history.go(2);
+
+
+
+//Json/////////////////////////
+
+const json = JSON.stringify({ x: 5, y: 6 });
+const object = JSON.parse(json);
+console.log(json);
+// expected output: "{"x":5,"y":6}"
+console.log(object);
+// expected output: {x:5,y:6}
+
+
+const json2 = JSON.stringify({ x: 'Ghbdt', y: 'Gjrf' });
+console.log(  json2)
+
+
+const json3 = JSON.stringify({ x: 99.9 , 8: 'Gjrf' });
+console.log(  json3)
+
+const objeckt = JSON.parse(json3 );
+console.log(objeckt)
+
+
+
+// localStorage.setItem('key', 'value');
+// console.log(userData)
+// localStorage.setItem('banana', newData);
+localStorage.setItem('banana', 'new lessob')
+const userData = {name: 'Maksim', log: 'Minsk', age: 27}
+const userJSONData = JSON.stringify(userData)
+console.log(userJSONData)
+ localStorage.setItem('banana', userJSONData);
+
+
+
