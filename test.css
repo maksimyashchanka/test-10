@@ -19,3 +19,38 @@ div.section{
     background-color:  orange;
     border: 2px solid orange;
 }
+
+/*Рекурсия*/
+.test-2{
+    width: 50px;
+    height: 50px;
+    position: relative;
+}
+
+.green{
+    margin: 50px;
+    padding: 5px;
+
+    background: green;
+}
+
+.btn-2{
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+.btn-3{
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+
+
+
+
+.cont{
+    width: 250px;
+    height: 150px;
+    border: 2px solid #10367C;
+    display: none;
+}

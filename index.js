@@ -1,4 +1,4 @@
- const people = [
+const people = [
     {name: 'Maksim', age: 27, budget: 5000},
     {name: 'Vika', age: 16, budget: 4900},
     {name: 'Dima', age: 26, budget: 9000},
@@ -6,9 +6,9 @@
     {name: 'Danila', age: 10, budget: 3500}
 ]
 
-for(let i = 0; 0 < people.length; i++){
-console.log(people);
-}
+// for(let i = 0; 0 < people.length; i++){
+// console.log(people);
+// }
 
 
 for (let person of people ){
@@ -17,7 +17,7 @@ console.log(person)
 
 
 
-forEach
+//forEach
 people.forEach(function (person){
    console.log(person);
 })
@@ -25,7 +25,7 @@ people.forEach(function (person){
 people.forEach(person => console.log(person))
 
 
-map
+//map
 const newPeo = people.map(person => {
 return person.name
 })
@@ -58,12 +58,12 @@ console.log(puk)
 const adler = people.filter(person => person.age >= 27)
 console.log(adler)
 
-Reduce
-    let big = 0;
-    for(let i = 0; 0 < people.length; i++){
-       big += people[i]. budget
-   }
-    console.log(big);
+//Reduce
+//     let big = 0;
+//     for(let i = 0; 0 < people.length; i++){
+//        big += people[i].budget;
+//    }
+//     console.log(big);
 
 
 const lis = people.reduce((total, persone) => {
@@ -506,7 +506,7 @@ const today = new Date();
 console.log(today);
 
 
-// 9 Советов
+// 9 Советов//////////////////////////////////////////////////////////////
 //#1
 function cros(name, age){
     console.log('Ваше имя: ' + name);
@@ -610,7 +610,7 @@ for(let i = 0; i < 1000000; i++){
 console.timeEnd( 'ex 3');
 
 
-//Функция стрелочная
+//Функция стрелочная////////////////////////////////////////////////////////
 function z1(){
     console.log(1);
     console.log(2);
@@ -673,7 +673,7 @@ console.log(arrNamberTu);
 // });
 
 
-//Лучший Вариант
+//Лучший Вариант////////////////////////////////////////////////////////////
 const readJson = file =>{
         file.forEach(item =>{
         console.log(item.name);
@@ -730,7 +730,7 @@ sayHiBye();
 
 
 
-DOM
+//DOM////////////////////////////////////////////////////////////////////
 const  bodyElements = document.body; //все деревo HTML
 const childNodes = bodyElements.childNodes;
 for(let node of childNodes){
@@ -843,4 +843,91 @@ console.log(userJSONData)
  localStorage.setItem('banana', userJSONData);
 
 
+//Рекурсия - возможноть функции вызвать саму себя///////////////////////////////
+let recu = 0;
+
+function rec(){
+    recu = recu + 2;
+    console.log(recu);
+    if(recu > 99){
+        return recu;
+    }
+     rec()
+}
+rec();
+
+let offset = 0;
+
+function move(){
+    document.querySelector('.test-2').style.left = offset + "px";
+    offset = offset + 5;
+    if(offset > 400){
+        return true
+    }
+    setTimeout(move, 500);
+}
+document.querySelector('.btn-2').onclick = move;
+
+
+console.log("===============")
+
+
+//Faktorial
+function factorial(num){
+    for(var result = 1;  num > 1; num--){
+        console.log('входим в фор')
+        result = result * num;
+        console.log(result);
+    }
+    return result;
+}
+factorial(5);
+
+console.log("========")
+
+//Fibanathi Number  Пример 1//////////////////////////////////////////////
+function fibonacci(num){
+    const resul = [0,1];
+    for(let i = 2; i <= num; i++){
+        const prevNum1 = resul[i - 1];
+        const prevNum2 = resul[i - 2];
+        resul.push(prevNum1 + prevNum2);
+    }
+
+    return resul[num]
+}
+
+console.log(fibonacci(7));
+
+
+
+//Пример 2
+function fibonacciShort(num) {
+    let a = 1,
+        b = 1;
+    for (let i = 3; i <= num; i++) {
+        [a, b] = [b, a + b];
+    }
+    return b
+}
+
+console.log(fibonacciShort(10)); //55
+
+
+//Решение Фибоначчи с  рекурсией
+function fibonacci2(num){
+    if(num < 2){
+        return num;
+    }
+return fibonacci(num -1) + fibonacci(num -2)
+}
+
+console.log(fibonacci2(7))
+
+
+
+
+function view(){
+    document.getElementById("co").style.display = "block";
+};
 
